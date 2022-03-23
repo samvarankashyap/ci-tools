@@ -807,6 +807,8 @@ func determineWorkflow(workflow string, clusterProfile api.ClusterProfile) *stri
 			ret = "ipi-aws"
 		case api.ClusterProfileAWSArm64:
 			ret = "ipi-aws"
+		case ClusterProfileAWSOSDMSP:
+			ret = "osd-create"
 		case api.ClusterProfileAzure, api.ClusterProfileAzure2, api.ClusterProfileAzure4:
 			ret = "ipi-azure"
 		case api.ClusterProfileAzureStack:
